@@ -51,7 +51,13 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="l9w-A8-jL6"/>
+                    <navigationItem key="navigationItem" id="l9w-A8-jL6">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="eNX-cY-H6R">
+                            <connections>
+                                <segue destination="ciw-Xy-IBA" kind="push" id="0vp-SN-TaN"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="NYA-Y5-xjh" id="nsp-50-qda"/>
                     </connections>
@@ -59,6 +65,74 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="694" y="405"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="pAe-my-Kla">
+            <objects>
+                <viewController id="ciw-Xy-IBA" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="kGT-aO-lTu"/>
+                        <viewControllerLayoutGuide type="bottom" id="kep-zh-Pfa"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="X01-lW-WYe">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QzF-2q-6hS">
+                                <rect key="frame" x="16" y="76" width="50" height="50"/>
+                                <state key="normal" backgroundImage="child">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5VJ-dC-2Gk">
+                                <rect key="frame" x="96" y="76" width="50" height="50"/>
+                                <state key="normal" backgroundImage="phone">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1f9-ZO-ob4">
+                                <rect key="frame" x="175" y="76" width="50" height="50"/>
+                                <state key="normal" backgroundImage="shopping-cart">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7D5-Ls-zsB">
+                                <rect key="frame" x="254" y="76" width="50" height="50"/>
+                                <state key="normal" backgroundImage="travel">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Todo事項" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zDZ-im-8JL">
+                                <rect key="frame" x="16" y="164" width="72" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VTk-1k-fSN">
+                                <rect key="frame" x="101" y="160" width="198" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="wRi-Xx-GXg">
+                                <rect key="frame" x="0.0" y="211" width="320" height="162"/>
+                                <date key="date" timeIntervalSinceReferenceDate="448094614.22759801">
+                                    <!--2015-03-15 06:43:34 +0000-->
+                                </date>
+                            </datePicker>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5lJ-5K-j77">
+                                <rect key="frame" x="137" y="397" width="46" height="30"/>
+                                <state key="normal" title="確定">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="lvy-lR-LpS"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="185-8D-mWr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1069" y="405"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ZHI-Xs-H2u">
@@ -80,7 +154,11 @@
         </scene>
     </scenes>
     <resources>
+        <image name="child" width="50" height="50"/>
         <image name="child-selected" width="50" height="50"/>
+        <image name="phone" width="50" height="50"/>
+        <image name="shopping-cart" width="50" height="50"/>
+        <image name="travel" width="50" height="50"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
