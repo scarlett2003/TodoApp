@@ -14,6 +14,7 @@
 		CC2AF2941AB2136E00A6AE76 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC2AF2921AB2136E00A6AE76 /* LaunchScreen.xib */; };
 		CC2AF2A01AB2136E00A6AE76 /* TodoAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2AF29F1AB2136E00A6AE76 /* TodoAppTests.swift */; };
 		CC2AF2AA1AB218F200A6AE76 /* TodoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2AF2A91AB218F200A6AE76 /* TodoModel.swift */; };
+		CCFA01C21AB5644D0082C632 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCFA01C11AB5644D0082C632 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		CC2AF29E1AB2136E00A6AE76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CC2AF29F1AB2136E00A6AE76 /* TodoAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoAppTests.swift; sourceTree = "<group>"; };
 		CC2AF2A91AB218F200A6AE76 /* TodoModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoModel.swift; sourceTree = "<group>"; };
+		CCFA01C11AB5644D0082C632 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 				CC2AF2921AB2136E00A6AE76 /* LaunchScreen.xib */,
 				CC2AF2871AB2136E00A6AE76 /* Supporting Files */,
 				CC2AF2A91AB218F200A6AE76 /* TodoModel.swift */,
+				CCFA01C11AB5644D0082C632 /* DetailViewController.swift */,
 			);
 			path = TodoApp;
 			sourceTree = "<group>";
@@ -218,6 +221,7 @@
 				CC2AF2AA1AB218F200A6AE76 /* TodoModel.swift in Sources */,
 				CC2AF28C1AB2136E00A6AE76 /* ViewController.swift in Sources */,
 				CC2AF28A1AB2136E00A6AE76 /* AppDelegate.swift in Sources */,
+				CCFA01C21AB5644D0082C632 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,6 +413,7 @@
 				CC2AF2A51AB2136E00A6AE76 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CC2AF2A61AB2136E00A6AE76 /* Build configuration list for PBXNativeTarget "TodoAppTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +422,7 @@
 				CC2AF2A81AB2136E00A6AE76 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

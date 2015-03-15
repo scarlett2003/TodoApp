@@ -66,10 +66,10 @@
             </objects>
             <point key="canvasLocation" x="694" y="405"/>
         </scene>
-        <!--View Controller-->
+        <!--Detail View Controller-->
         <scene sceneID="pAe-my-Kla">
             <objects>
-                <viewController id="ciw-Xy-IBA" sceneMemberID="viewController">
+                <viewController id="ciw-Xy-IBA" customClass="DetailViewController" customModule="TodoApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="kGT-aO-lTu"/>
                         <viewControllerLayoutGuide type="bottom" id="kep-zh-Pfa"/>
@@ -83,24 +83,40 @@
                                 <state key="normal" backgroundImage="child">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <state key="selected" image="child-selected"/>
+                                <connections>
+                                    <action selector="childTapped:" destination="ciw-Xy-IBA" eventType="touchUpInside" id="l1e-L8-NJm"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5VJ-dC-2Gk">
                                 <rect key="frame" x="96" y="76" width="50" height="50"/>
                                 <state key="normal" backgroundImage="phone">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <state key="selected" image="phone-selected"/>
+                                <connections>
+                                    <action selector="phoneTapped:" destination="ciw-Xy-IBA" eventType="touchUpInside" id="bP2-AU-eUo"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1f9-ZO-ob4">
                                 <rect key="frame" x="175" y="76" width="50" height="50"/>
                                 <state key="normal" backgroundImage="shopping-cart">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <state key="selected" image="shopping-cart-selected"/>
+                                <connections>
+                                    <action selector="shoppingTapped:" destination="ciw-Xy-IBA" eventType="touchUpInside" id="wWA-81-MYN"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7D5-Ls-zsB">
                                 <rect key="frame" x="254" y="76" width="50" height="50"/>
                                 <state key="normal" backgroundImage="travel">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <state key="selected" image="travel-selected"/>
+                                <connections>
+                                    <action selector="travelTapped:" destination="ciw-Xy-IBA" eventType="touchUpInside" id="YX9-U6-aZo"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Todo事項" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zDZ-im-8JL">
                                 <rect key="frame" x="16" y="164" width="72" height="21"/>
@@ -124,11 +140,22 @@
                                 <state key="normal" title="確定">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="okTapped:" destination="ciw-Xy-IBA" eventType="touchUpInside" id="kG0-1t-5jc"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="lvy-lR-LpS"/>
+                    <connections>
+                        <outlet property="childButton" destination="QzF-2q-6hS" id="l74-aQ-mb4"/>
+                        <outlet property="phoneButton" destination="5VJ-dC-2Gk" id="znr-gl-YlF"/>
+                        <outlet property="shoppingButton" destination="1f9-ZO-ob4" id="bcH-Jk-z9l"/>
+                        <outlet property="todoDate" destination="wRi-Xx-GXg" id="5Ln-OY-1Qi"/>
+                        <outlet property="todoItem" destination="VTk-1k-fSN" id="4JO-Cb-7NG"/>
+                        <outlet property="travelButton" destination="7D5-Ls-zsB" id="7hT-Ei-geP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="185-8D-mWr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -157,8 +184,11 @@
         <image name="child" width="50" height="50"/>
         <image name="child-selected" width="50" height="50"/>
         <image name="phone" width="50" height="50"/>
+        <image name="phone-selected" width="50" height="50"/>
         <image name="shopping-cart" width="50" height="50"/>
+        <image name="shopping-cart-selected" width="50" height="50"/>
         <image name="travel" width="50" height="50"/>
+        <image name="travel-selected" width="50" height="50"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
